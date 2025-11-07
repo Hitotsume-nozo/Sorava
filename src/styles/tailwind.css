@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ring: rgba(59, 170, 84, 0.35);
+}
+
+html, body, #app {
+  height: 100%;
+  background: #0b1f16;
+  color: #e6f3ea;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 px-5 py-3 rounded-full bg-brand-500 hover:bg-brand-600 text-white font-semibold shadow-glow transition-transform duration-200 hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-brand-300;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 px-5 py-3 rounded-full bg-white/10 text-white hover:bg-white/20 border border-white/10 font-semibold transition;
+}
+
+.input {
+  @apply w-full px-4 py-3 rounded-xl glass focus:outline-none focus:ring-2 focus:ring-brand-400 text-white placeholder-white/60;
+}
