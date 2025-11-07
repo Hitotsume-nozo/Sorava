@@ -10,3 +10,16 @@ A Vue 3 + Vite + Tailwind site with a beautiful landing page and secure login, d
 Install:
 ```bash
 sudo pacman -Syu nodejs npm
+```
+Initialization:
+```bash
+npm i -D @vitejs/plugin-vue
+```
+
+Running:
+```bash
+npm i
+npm run dev
+```
+
+
